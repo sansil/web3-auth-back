@@ -17,6 +17,10 @@ app.use((req, res, next) => {
   next()
 })
 
+app.get('/', (req, res) => {
+  res.status(200).send('Backend web3 auth')
+})
+
 app.get('/nonce', (req, res) => {
   const nonce = new Date().getTime()
   const address = req.query.address
