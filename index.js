@@ -71,5 +71,5 @@ const getSignMessage = (address, nonce) => {
 }
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Auth web3 backend listening on port ${port}`)
 })
